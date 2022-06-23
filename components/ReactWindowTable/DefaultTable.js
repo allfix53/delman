@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { AutoSizer } from 'react-virtualized'
 import { VariableSizeGrid as Grid } from 'react-window'
 import Draggable from 'react-draggable'
@@ -39,7 +39,6 @@ class DefaultTable extends React.Component {
   }
 
   Cell = ({ columnIndex, rowIndex, style }) => {
-    const refItem = React.useRef()
     const content = this.props.data[rowIndex][this.columns[columnIndex]]
     return (
       <>
@@ -51,7 +50,6 @@ class DefaultTable extends React.Component {
               this.state.rowOpenedShowMore == rowIndex ? `cyan` : `white`,
           }}
           className="main-grid"
-          ref={refItem}
         >
           {content}
           {/* Icon to open show more */}
