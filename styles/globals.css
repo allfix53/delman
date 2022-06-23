@@ -14,3 +14,132 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* TEST */
+
+* {
+  box-sizing: border-box;
+}
+
+.sticky-grid__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+}
+
+.sticky-grid__header__base {
+  z-index: 3;
+  background: coral;
+  position: sticky;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.sticky-grid__header__scrollable {
+  position: absolute;
+}
+
+.sticky-grid__header__scrollable__column {
+  position: absolute;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.sticky-grid__sticky-columns__container {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: lightblue;
+  width: min-content;
+}
+
+.sticky-grid__sticky-columns__row {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.sticky-grid__data__container {
+  position: absolute;
+}
+
+.sticky-grid__data__column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+
+/* Grid */
+.grid-container {
+  position: relative;
+}
+
+.grid-container .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  display: flex;
+}
+
+.grid-container .header .col{
+  background-color: #eee;
+  font-weight: bold;
+  padding: 5px;
+  position: relative;
+  border: 1px #e3e3e3 solid;
+}
+
+.grid-draggable-handler{
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  right: 0;
+  display: flex;
+  cursor: col-resize;
+  color: #ccc;
+}
+
+.main-grid {
+  padding: 5px;
+  border: 1px #e3e3e3 solid;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main-grid-box {
+  position: relative;
+}
+.main-grid-box .show-more {
+  position: absolute;
+  width: max-content;
+  /* bottom: 0; */
+  padding: 15px;
+  border: #ccc solid 2px;
+  z-index: 9999999999;
+  background: #fff;
+  height: 300;
+}
