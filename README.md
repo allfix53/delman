@@ -1,8 +1,9 @@
-Before working on the project in this repo I was concerned with using typescript,
-but the react-window / virtualized library was not mature enough for ts and react 18.
-I put a repo using typescript at the end of this readme, only experimental not fully work.
+Before working on the project in this repo I was focused on using typescript, but the react-window / virtualized library was not mature enough for ts and react 18, so I rebuild it using js in this repo.
 
-## Staging
+_I put a repo using typescript at the end of this readme, only experimental not fully work.._
+
+## Staging / Final result
+
 https://delman.vercel.app/
 
 ### Getting Started
@@ -38,5 +39,6 @@ baseUrl: 'https://delman.vercel.app'
 
 This projct is not implement TDD, so test coverage is so minimal. Just to show how to test with cypress
 
-## !!!Experimental repo using typescript _(not fully work)_
+#### !!!Experimental only, using typescript _(not fully work)_
+
 https://github.com/allfix53/virtualized-table

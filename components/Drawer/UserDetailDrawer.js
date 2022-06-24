@@ -36,7 +36,13 @@ export default function UserDetailDrawer({
 
   return (
     <>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="sm">
+      <Drawer
+        id="cy-user-detail-drawer"
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        size="sm"
+      >
         <DrawerOverlay
           bg="blackAlpha.300"
           backdropFilter="blur(10px) hue-rotate(90deg)"

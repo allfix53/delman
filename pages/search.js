@@ -62,6 +62,7 @@ const Search = () => {
                 <BiSearch />
               </InputLeftElement>
               <Input
+                id="cy-search-email"
                 type="text"
                 placeholder="Search by email"
                 autoFocus
@@ -110,11 +111,22 @@ const Search = () => {
           {searchResult ? (
             <>
               <Heading as="h2">{searchResult.name}</Heading>
-              <Heading as="h2" fontSize="1rem" fontWeight="normal" my={4}>
+              <Heading
+                as="h2"
+                id="cy-result-search-name"
+                fontSize="1rem"
+                fontWeight="normal"
+                my={4}
+              >
                 {searchResult.email.toLowerCase()}
               </Heading>
               <Box h="1px" bg="gray.400" />
-              <Button colorScheme="facebook" mt={4} onClick={onOpen}>
+              <Button
+                id="cy-result-detail-user"
+                colorScheme="facebook"
+                mt={4}
+                onClick={onOpen}
+              >
                 View User Profile
               </Button>
             </>
