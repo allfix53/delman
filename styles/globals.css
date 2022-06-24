@@ -111,6 +111,7 @@ a {
   padding: 5px;
   position: relative;
   border: 1px #e3e3e3 solid;
+  text-align: center;
 }
 
 .grid-draggable-handler{

@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <DefaultLayout
-      pageTitle="Sales Dashboard"
-      pageDescription="List of Sales Data"
+      pageTitle="Users Data"
+      pageDescription="List of Users Data"
       pageName="Dashboard | Sales Data"
     >
       <Box ref={ref} w="full" h="full">

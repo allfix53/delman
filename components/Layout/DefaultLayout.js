@@ -1,9 +1,4 @@
-import {
-  Container,
-  Flex,
-  Box,
-  Heading,
-} from '@chakra-ui/react'
+import { Container, Flex, Box, Heading } from '@chakra-ui/react'
 import Head from 'next/head'
 import { MdSpaceDashboard } from 'react-icons/md'
 import Sidebar from '../Navigation/Sidebar'
@@ -37,7 +32,7 @@ export default function DefaultLayout({
                 borderBottom="1px"
                 borderBottomColor="gray.300"
               >
-                <Heading as="h3" fontSize="1.6rem">
+                <Heading id="cy-page-title" as="h3" fontSize="1.6rem">
                   {pageTitle}
                 </Heading>
                 <Box color="blue.600" fontSize=".8rem" fontWeight="semibold">
