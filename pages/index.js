@@ -3,7 +3,6 @@ import { getAllSales } from '../services/Sales'
 import { Progress, Box } from '@chakra-ui/react'
 import { useQuery } from 'react-query'
 import React, { useEffect, useRef, useState } from 'react'
-import RWSalesTableNew from '../components/ReactWindowTable/RWSalesTableNew'
 import DefaultTable from '../components/ReactWindowTable/DefaultTable'
 
 const Home = () => {

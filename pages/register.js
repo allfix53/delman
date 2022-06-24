@@ -42,6 +42,7 @@ const Home = () => {
           onCloseComplete: () => {
             Router.push('/users')
           },
+          id: 'cy-success-toast',
         })
       } else {
         toast({
@@ -52,6 +53,7 @@ const Home = () => {
           isClosable: true,
           position: 'top-right',
           variant: 'left-accent',
+          id: 'cy-error-toast',
         })
       }
     })
@@ -69,7 +71,7 @@ const Home = () => {
           <FormControl isInvalid={errors.name}>
             <FormLabel htmlFor="name">Name</FormLabel>
             <Input
-              id="name"
+              id="cy-reg-name"
               placeholder="Name"
               {...register('name', {
                 required: 'Required',
@@ -92,7 +94,7 @@ const Home = () => {
           <FormControl isInvalid={errors.email} pt="6">
             <FormLabel htmlFor="email">Email</FormLabel>
             <Input
-              id="email"
+              id="cy-reg-email"
               placeholder="Email"
               {...register('email', {
                 required: 'Required',

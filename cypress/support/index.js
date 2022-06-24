@@ -1,0 +1,1 @@
+cy.faker = require('faker');
